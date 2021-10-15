@@ -1,31 +1,32 @@
 class HashTable:
+
     def __init__(self):
-        self.size = 10
+        self.size = 5
         self.hashmap = [[] for _ in range(0, self.size)]
 
-    def hashing_func(self, key):
+    def hash_func(self, key):
         hashed_key = hash(key) % self.size
         return hashed_key
 
     def set(self, key, value):
-        global i
-        hash_key = self.hashing_func(key)
-        key_exist = False
+        hash_key = self.hash_func(key)
+        key_exists = False
         slot = self.hashmap[hash_key]
         for i, kv in enumerate(slot):
             k, v = kv
             if key == k:
-                key_exist = True
+                key_exists = True
                 break
-        if key_exist:
-            slot[i] = (key, value)
+
+        if key_exists:
+            slot[i] = ((key, value))
             return slot
         else:
             slot.append((key, value))
             return slot
 
     def get(self, key):
-        hash_key = self.hashing_func(key)
+        hash_key = self.hash_func(key)
         slot = self.hashmap[hash_key]
         if slot:
             for kv in slot:
@@ -33,11 +34,11 @@ class HashTable:
                 if key == k:
                     return slot
         elif not slot:
-            raise KeyError(key)
+            raise KeyError("The key does not exist.")
 
     def delete(self, key):
         global i
-        hash_key = self.hashing_func(key)
+        hash_key = self.hash_func(key)
         key_exists = False
         slot = self.hashmap[hash_key]
         for i, kv in enumerate(slot):
