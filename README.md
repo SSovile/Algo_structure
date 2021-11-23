@@ -1,5 +1,5 @@
 ## Task 4
 
-Dijkstra's Algorithm
+Prima's Algorithm
 
-Create algorithm which found the shortest path
+Create algorithm which found minimum spanning tree for a weighted undirected graph
