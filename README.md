@@ -1,5 +1,5 @@
-## Task 4
+## Task 6
 
-Prima's Algorithm
+Wchain
 
 Create algorithm which found minimum spanning tree for a weighted undirected graph
