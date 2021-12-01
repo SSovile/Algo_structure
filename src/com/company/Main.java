@@ -28,22 +28,6 @@ public class Main {
         System.out.println(whain);
         int counter = 0 ;
 
-        //       int start = scanner.nextInt();
-        //       System.out.println(start);
-
-//Work:2
-//        for (String s : whain) {
-//            if (whain.get(start).contains(s)) {
-//                wha.add(s);
-//            }
-//        }
-//
-//        for(int i = 0; i< wha.size();i++){
-//            if(wha.get(0).length() - wha.get(i).length() == i){
-//                whaout.add(wha.get(i));
-//            }
-//        }
-
         String start = whain.get(0);
         int k = 0;
         String temp = whain.get(k);
