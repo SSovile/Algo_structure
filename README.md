@@ -1,5 +1,5 @@
-## Task 4
+## Task 7
 
-Prima's Algorithm
+Rabin Karpa's Algorithm
 
-Create algorithm which found minimum spanning tree for a weighted undirected graph
+Create algorithm which found pattern in the text
