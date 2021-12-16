@@ -10,13 +10,7 @@ def Rabin_Karp_Matcher(text, pattern, d, q):
         t = (d * t + ord(text[i])) % q
     for s in range(n - m + 1):
         if p == t:
-            match = True
-            for i in range(m):
-                if pattern[i] != text[s + i]:
-                    match = False
-                    break
-            if match:
-                result = result + [s]
+            result = result + [s]
         if s < n - m:
             t = (t - h * ord(text[s])) % q
             t = (t * d + ord(text[s + m])) % q
